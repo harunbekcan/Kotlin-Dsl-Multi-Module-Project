@@ -1,6 +1,10 @@
+import org.jetbrains.kotlin.kapt3.base.Kapt.kapt
+
 plugins {
     id (Configs.androidApplication)
     id (Configs.kotlinAndroid)
+    id (Configs.kotlinKapt)
+    id (Configs.daggerHiltPlugin)
 }
 
 android {
@@ -41,4 +45,7 @@ dependencies {
     testImplementation (Dependencies.junit4)
     androidTestImplementation (Dependencies.junitExtensions)
     androidTestImplementation (Dependencies.espressoCore)
+
+    api(Dependencies.daggerHilt)
+    kapt(Dependencies.daggerHiltCompiler)
 }

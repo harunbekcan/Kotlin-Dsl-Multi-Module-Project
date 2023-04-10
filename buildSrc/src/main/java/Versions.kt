@@ -10,4 +10,5 @@ object Versions {
     const val junit4Version = "4.13.2"
     const val junitExtensionsVersion = "1.1.5"
     const val espressoCoreVersion = "3.5.1"
+    const val hiltVersion = "2.44"
 }
