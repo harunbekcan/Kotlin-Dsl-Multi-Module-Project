@@ -9,4 +9,6 @@ object Dependencies {
     const val espressoCore = "androidx.test.espresso:espresso-core:${Versions.espressoCoreVersion}"
     const val daggerHilt = "com.google.dagger:hilt-android:${Versions.hiltVersion}"
     const val daggerHiltCompiler = "com.google.dagger:hilt-compiler:${Versions.hiltVersion}"
+    const val navigation = "androidx.navigation:navigation-ui-ktx:${Versions.navigationVersion}"
+    const val navigationFrag = "androidx.navigation:navigation-fragment-ktx:${Versions.navigationVersion}"
 }

@@ -46,6 +46,8 @@ dependencies {
     androidTestImplementation (Dependencies.junitExtensions)
     androidTestImplementation (Dependencies.espressoCore)
 
-    api(Dependencies.daggerHilt)
     kapt(Dependencies.daggerHiltCompiler)
+    api(Dependencies.daggerHilt)
+    api(Dependencies.navigation)
+    api(Dependencies.navigationFrag)
 }
