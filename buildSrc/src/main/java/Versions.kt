@@ -12,4 +12,6 @@ object Versions {
     const val espressoCoreVersion = "3.5.1"
     const val hiltVersion = "2.44"
     const val navigationVersion = "2.5.3"
+    const val okHttpVersion = "4.9.3"
+    const val gson = "2.10"
 }

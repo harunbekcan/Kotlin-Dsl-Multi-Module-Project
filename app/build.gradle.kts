@@ -37,22 +37,24 @@ android {
 }
 
 dependencies {
-    implementation (Dependencies.androidCoreKtx)
-    implementation (Dependencies.appCompat)
-    implementation (Dependencies.material)
-    implementation (Dependencies.constraintLayout)
-    testImplementation (Dependencies.junit4)
-    androidTestImplementation (Dependencies.junitExtensions)
-    androidTestImplementation (Dependencies.espressoCore)
-
-    kapt(Dependencies.daggerHiltCompiler)
-    api(Dependencies.daggerHilt)
-    api(Dependencies.navigation)
-    api(Dependencies.navigationFrag)
-
     implementation(project(":data"))
     implementation(project(":common"))
     implementation(project(":domain"))
     implementation(project(":feature"))
     implementation(project(":navigation"))
+
+
+    implementation (Dependencies.androidCoreKtx)
+    implementation (Dependencies.appCompat)
+    implementation (Dependencies.material)
+    implementation (Dependencies.constraintLayout)
+
+    kapt(Dependencies.daggerHiltCompiler)
+    implementation(Dependencies.daggerHilt)
+    implementation(Dependencies.gson)
+    implementation(Dependencies.navigation)
+
+    testImplementation (Dependencies.junit4)
+    androidTestImplementation (Dependencies.junitExtensions)
+    androidTestImplementation (Dependencies.espressoCore)
 }
