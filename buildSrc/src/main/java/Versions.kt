@@ -14,4 +14,5 @@ object Versions {
     const val navigationVersion = "2.5.3"
     const val okHttpVersion = "4.9.3"
     const val gson = "2.10"
+    const val glide = "4.15.1"
 }

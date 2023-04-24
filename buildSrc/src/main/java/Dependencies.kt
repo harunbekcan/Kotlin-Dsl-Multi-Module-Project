@@ -29,4 +29,7 @@ object Dependencies {
 
     // Gson
     const val gson = "com.google.code.gson:gson:${Versions.gson}"
+
+    //Glide
+    const val glide = "com.github.bumptech.glide:glide:${Versions.glide}"
 }
