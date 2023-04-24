@@ -1,4 +1,3 @@
-import org.jetbrains.kotlin.kapt3.base.Kapt.kapt
 
 plugins {
     id (Configs.androidApplication)
@@ -50,4 +49,10 @@ dependencies {
     api(Dependencies.daggerHilt)
     api(Dependencies.navigation)
     api(Dependencies.navigationFrag)
+
+    implementation(project(":data"))
+    implementation(project(":common"))
+    implementation(project(":domain"))
+    implementation(project(":feature"))
+    implementation(project(":navigation"))
 }
