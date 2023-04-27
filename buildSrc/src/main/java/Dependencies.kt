@@ -19,6 +19,10 @@ object Dependencies {
     const val daggerHilt = "com.google.dagger:hilt-android:${Versions.hiltVersion}"
     const val daggerHiltCompiler = "com.google.dagger:hilt-compiler:${Versions.hiltVersion}"
 
+    //Retrofit
+    const val retrofit = "com.squareup.retrofit2:retrofit:${Versions.retrofitVersion}"
+    const val retrofitConverter = "com.squareup.retrofit2:converter-gson:${Versions.retrofitVersion}"
+
     //Navigation
     const val navigation = "androidx.navigation:navigation-ui-ktx:${Versions.navigationVersion}"
     const val navigationFrag = "androidx.navigation:navigation-fragment-ktx:${Versions.navigationVersion}"

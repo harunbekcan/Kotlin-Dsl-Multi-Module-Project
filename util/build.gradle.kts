@@ -1,12 +1,10 @@
 plugins {
     id (Configs.androidLibrary)
     id (Configs.kotlinJetBrains)
-    id (Configs.kotlinKapt)
-    id (Configs.daggerHiltPlugin)
 }
 
 android {
-    namespace = "com.harunbekcan.data"
+    namespace = "com.harunbekcan.util"
     compileSdk = Configs.compileSdk
 
     defaultConfig {
@@ -34,8 +32,6 @@ android {
 
 dependencies {
 
-    implementation(project(Modules.util))
-
     implementation (Dependencies.androidCoreKtx)
     implementation (Dependencies.appCompat)
     implementation (Dependencies.material)
@@ -43,11 +39,7 @@ dependencies {
     androidTestImplementation (Dependencies.junitExtensions)
     androidTestImplementation (Dependencies.espressoCore)
 
-    kapt(Dependencies.daggerHiltCompiler)
-    implementation(Dependencies.daggerHilt)
-    implementation(Dependencies.retrofit)
-    implementation(Dependencies.retrofitConverter)
-    implementation(Dependencies.gson)
+    implementation(Dependencies.glide)
     implementation(Dependencies.okHttp)
     implementation(Dependencies.okHttpLoggingInterceptor)
 }

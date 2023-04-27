@@ -1,7 +1,6 @@
-
 plugins {
     id (Configs.androidApplication)
-    id (Configs.kotlinAndroid)
+    id (Configs.kotlinJetBrains)
     id (Configs.kotlinKapt)
     id (Configs.daggerHiltPlugin)
 }
@@ -37,24 +36,21 @@ android {
 }
 
 dependencies {
-    implementation(project(":data"))
-    implementation(project(":common"))
-    implementation(project(":domain"))
-    implementation(project(":feature"))
-    implementation(project(":navigation"))
 
+    implementation(project(Modules.data))
+    implementation(project(Modules.domain))
+    implementation(project(Modules.util))
 
     implementation (Dependencies.androidCoreKtx)
     implementation (Dependencies.appCompat)
     implementation (Dependencies.material)
     implementation (Dependencies.constraintLayout)
+    testImplementation (Dependencies.junit4)
+    androidTestImplementation (Dependencies.junitExtensions)
+    androidTestImplementation (Dependencies.espressoCore)
 
     kapt(Dependencies.daggerHiltCompiler)
     implementation(Dependencies.daggerHilt)
     implementation(Dependencies.gson)
     implementation(Dependencies.navigation)
-
-    testImplementation (Dependencies.junit4)
-    androidTestImplementation (Dependencies.junitExtensions)
-    androidTestImplementation (Dependencies.espressoCore)
 }
