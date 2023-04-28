@@ -16,4 +16,5 @@ object Configs {
     const val jvmTarget = 1.8
     const val daggerHiltPlugin = "dagger.hilt.android.plugin"
     const val hilt = "com.google.dagger.hilt.android"
+    const val safeArgs = "androidx.navigation.safeargs.kotlin"
 }

@@ -24,8 +24,9 @@ object Dependencies {
     const val retrofitConverter = "com.squareup.retrofit2:converter-gson:${Versions.retrofitVersion}"
 
     //Navigation
-    const val navigation = "androidx.navigation:navigation-ui-ktx:${Versions.navigationVersion}"
+    const val navigationUi = "androidx.navigation:navigation-ui-ktx:${Versions.navigationVersion}"
     const val navigationFrag = "androidx.navigation:navigation-fragment-ktx:${Versions.navigationVersion}"
+    const val navigationSafeArgs = "androidx.navigation:navigation-safe-args-gradle-plugin:${Versions.navigationVersion}"
 
     //OkHttp
     const val okHttp = "com.squareup.okhttp3:okhttp:${Versions.okHttpVersion}"

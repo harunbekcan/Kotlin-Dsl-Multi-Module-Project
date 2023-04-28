@@ -3,6 +3,7 @@ plugins {
     id (Configs.kotlinJetBrains)
     id (Configs.kotlinKapt)
     id (Configs.daggerHiltPlugin)
+    id (Configs.safeArgs)
 }
 
 android {
@@ -33,6 +34,9 @@ android {
     kotlinOptions {
         jvmTarget = Configs.jvmTarget.toString()
     }
+    buildFeatures {
+        viewBinding = true
+    }
 }
 
 dependencies {
@@ -40,6 +44,8 @@ dependencies {
     implementation(project(Modules.data))
     implementation(project(Modules.domain))
     implementation(project(Modules.util))
+    implementation(project(Modules.navigation))
+    implementation(project(Modules.feature))
 
     implementation (Dependencies.androidCoreKtx)
     implementation (Dependencies.appCompat)
@@ -52,5 +58,7 @@ dependencies {
     kapt(Dependencies.daggerHiltCompiler)
     implementation(Dependencies.daggerHilt)
     implementation(Dependencies.gson)
-    implementation(Dependencies.navigation)
+    implementation(Dependencies.navigationUi)
+    implementation(Dependencies.navigationFrag)
+    implementation(Dependencies.navigationSafeArgs)
 }
