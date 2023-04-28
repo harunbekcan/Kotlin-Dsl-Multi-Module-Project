@@ -35,6 +35,7 @@ android {
 dependencies {
 
     implementation(project(Modules.util))
+    implementation(project(Modules.domain))
 
     implementation (Dependencies.androidCoreKtx)
     implementation (Dependencies.appCompat)
