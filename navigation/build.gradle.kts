@@ -28,6 +28,11 @@ android {
     kotlinOptions {
         jvmTarget = Configs.jvmTarget.toString()
     }
+    sourceSets {
+        getByName("main").res.srcDirs(
+            "$rootDir/navigation/src/main/sharedRes"
+        )
+    }
 }
 
 dependencies {

@@ -3,7 +3,6 @@ plugins {
     id (Configs.kotlinJetBrains)
     id (Configs.kotlinKapt)
     id (Configs.daggerHiltPlugin)
-    id (Configs.safeArgs)
 }
 
 android {
@@ -34,6 +33,11 @@ android {
     kotlinOptions {
         jvmTarget = Configs.jvmTarget.toString()
     }
+    sourceSets {
+        getByName("debug").res.srcDirs(
+            "$rootDir/navigation/src/main/sharedRes"
+        )
+    }
     buildFeatures {
         viewBinding = true
     }
@@ -60,5 +64,4 @@ dependencies {
     implementation(Dependencies.gson)
     implementation(Dependencies.navigationUi)
     implementation(Dependencies.navigationFrag)
-    implementation(Dependencies.navigationSafeArgs)
 }
